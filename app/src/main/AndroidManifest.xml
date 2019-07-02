@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.danielpalacio.rightmatch">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".login_register.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home_swipe.HomeSwipeActivity" />
+        <activity android:name=".login_register.RegisterActivity" />
+        <activity android:name=".user_profile.ProfileSettings" />
+        <activity android:name=".login_register.Phone_info" />
+        <activity android:name=".login_register.Introduction_info"></activity>
+    </application>
+
+</manifest>

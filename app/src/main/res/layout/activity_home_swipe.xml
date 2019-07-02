@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_swipe.HomeSwipeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <!--top_bar Linear Layout Begins-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_weight="10"
+            android:layout_height="0dp"
+            android:id="@+id/top_bar"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_weight="25"
+                android:id="@+id/profile_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="15dp"
+                android:background="@null"
+                android:onClick="toProfileSettings"
+                android:src="@drawable/profile_settings" />
+            <ImageView
+                android:layout_weight="50"
+                android:id="@+id/right_match_logo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/right_match"
+                android:padding="5dp"
+                android:scaleType="fitCenter" />
+            <ImageButton
+                android:layout_weight="25"
+                android:id="@+id/chat_session"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_chat_session"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:padding="15dp"
+                />
+
+        </LinearLayout>
+        <!--Top bar linear layout ends-->
+
+        <!--Middle bar Linear Layout Begins-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:id="@+id/middle_bar"
+            android:orientation="horizontal">
+            <!--I will be using glide/picasso to display the images of profiles here-->
+
+
+        </LinearLayout>
+        <!--Middle bar linear layout ends-->
+
+        <!--Bottom bar linear layour begins here-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:id="@+id/bottom_bar"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:id="@+id/rewind_button"
+                android:onClick="logout"
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:id="@+id/two_x_pop_up" />
+
+        </LinearLayout>
+        <!--Bottom bar linear layout ends here.-->
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

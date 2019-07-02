@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "604898333819",
+    "firebase_url": "https://rightmatch-b9af2.firebaseio.com",
+    "project_id": "rightmatch-b9af2",
+    "storage_bucket": "rightmatch-b9af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604898333819:android:da01ee2d64de2708",
+        "android_client_info": {
+          "package_name": "com.example.danielpalacio.rightmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604898333819-pdrfqj4m73dktgdg0d3pag493343lmm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danielpalacio.rightmatch",
+            "certificate_hash": "e602d1f22498cbd51aaf18679f618e2b2f341f0a"
+          }
+        },
+        {
+          "client_id": "604898333819-e9557pam8mj7s5k6qo92jkvmrf5cke34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0zGfwPY7x4p3lIypBPe0zjj1Yl8stbPg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604898333819-e9557pam8mj7s5k6qo92jkvmrf5cke34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

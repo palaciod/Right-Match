@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_register.RegisterActivity">
+
+    <!--The TextViews that hold the questions will hold image views instead with the lettering made within illustrator-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:weightSum="100">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:id="@+id/register_back_button"
+                android:onClick="previousActivity"/>
+
+        </LinearLayout>
+
+        <!--The textview below will be replaced with an imageview-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="Let's Get Started:"
+            android:textSize="25dp"
+            android:fontFamily="@font/berlindb"
+            android:gravity="center"
+            android:textColor="#DB7093"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="What's your email?"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:fontFamily="@font/berlinsr"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/register_email"/>
+
+        <!--The textview below will be replaced with an imageview-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="What will be your password?"
+            android:gravity="center"
+            android:fontFamily="@font/berlinsr"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edit_text"
+            android:gravity="center"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:textColor="#39B54A"
+            android:id="@+id/register_password"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:fontFamily="@font/berlinsr"
+            android:textSize="25dp"
+            android:text="Confirm Password: "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:id="@+id/password_confirmation"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:weightSum="100"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:layout_height="60dp"
+                android:fontFamily="@font/berlindb"
+                android:hint="Continue"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25dp"
+                android:background="@drawable/register_continue"
+                android:id="@+id/register_continue"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
